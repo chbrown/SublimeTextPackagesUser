@@ -1,0 +1,44 @@
+[
+  {
+    "keys": ["ctrl+s"],
+    "command": "toggle_side_bar"
+  },
+  {
+    "keys": ["ctrl+1"],
+    "command": "toggle_setting",
+    "args": {"setting": "gutter"}
+  },
+  {
+    "keys": ["command+ctrl+l"],
+    "command": "toggle_setting",
+    "args": {"setting": "line_numbers"}
+  },
+  {
+    "keys": ["ctrl+w"],
+    "command": "toggle_setting",
+    "args": {"setting": "word_wrap"}
+  },
+  {
+    "keys": ["command+ctrl+t"],
+    "command": "expand_tabs",
+    "args": {"set_translate_tabs": true}
+  },
+  {
+    "keys": ["shift+enter"],
+    "command": "write_selection_to_iterm",
+    "context": [{"key": "selector", "operator": "equal", "operand": "source.js"}]
+  },
+  {
+    "keys": ["shift+enter"],
+    "command": "write_selection_to_iterm",
+    "context": [{"key": "selector", "operator": "equal", "operand": "source.python"}]
+  },
+  // this is beyond stupid, due to the non-disable-able (wow!) auto-tag-close command in the built-in commands
+  {
+    "keys": ["/"],
+    "command": "insert",
+    "args": {"characters": "/"}
+  }
+  // stolen from http://sublimetext.userecho.com/topic/78436-find-in-selection-shouldnt-be-the-default/
+  // { "keys": ["super+f"], "command": "show_panel", "args": { "panel": "find", "in_selection": false } }
+]

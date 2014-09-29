@@ -1,0 +1,14 @@
+{
+  "installed_packages": [
+    "LESS",
+    "SideBarEnhancements",
+    "SublimeLinter",
+    "SublimeLinter-gjslint",
+    "SublimeLinter-jshint",
+    "SublimeLinter-pyflakes",
+    "SublimeLinter-ruby",
+    "SublimeLinter-xmllint",
+    "Theme - Soda",
+    "WordCount"
+  ]
+}
