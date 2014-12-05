@@ -32,6 +32,7 @@
 	"folder_exclude_patterns":
 	[
 		".git",
+		".idea",
 		".svn",
 		".ipynb_checkpoints",
 		"_site",
