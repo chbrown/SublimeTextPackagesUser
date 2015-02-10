@@ -23,8 +23,6 @@
 		"*.blg",
 		".RData",
 		".Rhistory",
-		"static/compiled.js",
-		"static/templates.js",
 		"static/lib*",
 		"compiled.min.js",
 		"compiled.max.js"
