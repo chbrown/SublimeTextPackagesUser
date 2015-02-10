@@ -1,4 +1,5 @@
 {
+  "in_process_packages": [],
   "installed_packages": [
     "LESS",
     "Package Control",
