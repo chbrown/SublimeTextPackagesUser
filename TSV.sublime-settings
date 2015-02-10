@@ -1,5 +1,7 @@
 {
-  "extensions": ["tsv"],
+  "extensions": [
+    "tsv"
+  ],
   "tab_size": 10,
   "translate_tabs_to_spaces": false,
   "trim_automatic_white_space": false,
