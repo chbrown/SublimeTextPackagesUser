@@ -7,14 +7,6 @@
     "gutter_theme_excludes": [],
     "lint_mode": "background",
     "linters": {
-      "gjslint": {
-        "@disable": false,
-        "args": [],
-        "disable": "",
-        "excludes": [],
-        "jslint_error": "",
-        "max_line_length": null
-      },
       "jshint": {
         "@disable": false,
         "args": [],
