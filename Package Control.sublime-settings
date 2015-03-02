@@ -1,8 +1,10 @@
 {
   "in_process_packages": [],
   "installed_packages": [
+    "JavaScriptNext - ES6 Syntax",
     "LESS",
     "Package Control",
+    "ReactJS",
     "SideBarEnhancements",
     "SublimeLinter",
     "SublimeLinter-jshint",

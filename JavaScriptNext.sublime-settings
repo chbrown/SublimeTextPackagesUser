@@ -1,0 +1,9 @@
+{
+  "extensions": [
+    "es6"
+  ],
+  "tab_size": 2,
+  "rulers": [
+    80
+  ]
+}
