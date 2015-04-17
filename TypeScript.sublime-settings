@@ -1,4 +1,6 @@
 {
+  "typescript_auto_format": false,
+  "typescript_auto_indent": false,
   "tab_size": 2,
   "rulers": [
     80
