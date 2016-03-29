@@ -1,8 +1,0 @@
-{
-  "selector": "source.ts",
-  "shell_cmd": "tsc -m commonjs -t ES5 $file",
-  "file_regex": "^(.+?)\\((\\d+),(\\d+)\\):\\s+(.+)$",
-  "osx": {
-    "path": "/usr/local/bin"
-  }
-}
