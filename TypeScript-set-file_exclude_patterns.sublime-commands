@@ -1,0 +1,6 @@
+[
+  {
+    "caption": "TypeScript: Set file_exclude_patterns from tsconfig.json",
+    "command": "set_file_exclude_patterns"
+  }
+]
