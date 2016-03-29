@@ -1,9 +1,11 @@
 {
   "atomic_save": false,
   "auto_complete": false,
-  "auto_complete_commit_on_tab": true,
   "auto_indent": true,
   "auto_match_enabled": false,
+  "binary_file_patterns": [
+    "*.min.js"
+  ],
   "bold_folder_labels": true,
   "caret_style": "phase",
   "color_scheme": "Packages/User/Espresso Soda.tmTheme",
@@ -18,12 +20,14 @@
     "*.pyc",
     "*.aux",
     "*.bbl",
-    "*.blg"
+    "*.bcf",
+    "*.blg",
+    "*.run.xml"
   ],
   "folder_exclude_patterns": [
     ".git",
+    "coverage",
     "node_modules",
-    "type_declarations/DefinitelyTyped",
     "vendor/bundle",
     "vendor/cache"
   ],
@@ -31,7 +35,9 @@
   "font_size": 12,
   "highlight_line": true,
   "highlight_modified_tabs": true,
+  "ignore_vcs_packages": true,
   "ignored_packages": [
+    "JavaScript",
     "Vintage"
   ],
   "ignored_words": [
@@ -45,18 +51,25 @@
     "geolocate",
     "geolocated",
     "geolocation",
+    "Grice",
     "Gricean",
     "hashtag",
     "hashtags",
+    "https",
     "implicature",
+    "Implicature",
     "implicatures",
     "internet",
     "mispredictions",
+    "modals",
+    "Neo",
     "Neo-Gricean",
     "online",
     "overfitting",
     "perceptron",
     "refactor",
+    "repos",
+    "schemas",
     "stylesheets",
     "uncheck",
     "unembedded",
@@ -69,12 +82,14 @@
     "→"
   ],
   "scroll_past_end": true,
+  "show_encoding": true,
   "tab_size": 2,
   "theme": "Soda Light 3.sublime-theme",
   "translate_tabs_to_spaces": true,
   "tree_animation_enabled": false,
   "trim_automatic_white_space": true,
   "trim_trailing_white_space_on_save": true,
+  "typescript_auto_format": false,
   "use_simple_full_screen": true,
   "use_tab_stops": true,
   "word_wrap": true
