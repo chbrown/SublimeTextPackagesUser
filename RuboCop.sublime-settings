@@ -1,0 +1,5 @@
+{
+  "rubocop_command": "/Users/chbrown/.gem/ruby/2.0.0/bin/rubocop",
+  "check_for_rvm": false,
+  "check_for_rbenv": false
+}

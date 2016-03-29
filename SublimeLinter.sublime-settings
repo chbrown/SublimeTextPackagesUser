@@ -17,6 +17,11 @@
         "args": [],
         "excludes": []
       },
+      "rubocop": {
+        "@disable": false,
+        "args": [],
+        "excludes": []
+      },
       "ruby": {
         "@disable": false,
         "args": [],
@@ -35,7 +40,8 @@
       "linux": [],
       "osx": [
         "/usr/local/bin",
-        "/usr/local/sbin"
+        "/usr/local/sbin",
+        "/Users/chbrown/.gem/ruby/2.0.0/bin"
       ],
       "windows": []
     },

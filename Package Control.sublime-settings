@@ -11,6 +11,7 @@
     "SublimeLinter-pyflakes",
     "SublimeLinter-ruby",
     "SublimeLinter-xmllint",
+    "SublimeLinter-rubocop",
     "Theme - Soda",
     "TypeScript",
     "WordCount"
