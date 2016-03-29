@@ -2,6 +2,6 @@
   "selector": "text.tex.latex",
   "shell_cmd": "pdflatex -interaction=scrollmode $file_name && open -a TeXShop.app $file_base_name.pdf",
   "osx": {
-    "path": "/usr/texbin/"
+    "path": "/Library/TeX/texbin"
   }
 }
