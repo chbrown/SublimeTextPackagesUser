@@ -4,6 +4,7 @@
   "auto_indent": true,
   "auto_match_enabled": false,
   "binary_file_patterns": [
+    "bundle.js",
     "*.min.js"
   ],
   "bold_folder_labels": true,
