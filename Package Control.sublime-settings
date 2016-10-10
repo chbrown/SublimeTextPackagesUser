@@ -7,6 +7,8 @@
   "installed_packages": [
     "Babel",
     "LESS",
+    "lispindent",
+    "nginx",
     "Package Control",
     "SideBarEnhancements",
     "SublimeLinter",
