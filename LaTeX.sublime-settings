@@ -1,3 +1,8 @@
 {
+  "extensions": [
+    "tex",
+    "sty",
+    "cls"
+  ],
   "spell_check": true
 }
