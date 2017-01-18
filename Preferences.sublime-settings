@@ -176,7 +176,8 @@
     "bundle.js.map",
     "*.min.js",
     "*.ipynb",
-    "*.log"
+    "*.log",
+    "_site/"
   ],
   "bold_folder_labels": true,
   "caret_style": "phase",
@@ -188,6 +189,7 @@
   "ensure_newline_at_eof_on_save": true,
   "file_exclude_patterns": [
     ".DS_Store",
+    ".jekyll-metadata",
     ".lein-repl-history",
     ".lein-failures",
     ".nrepl-port",
