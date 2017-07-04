@@ -210,7 +210,10 @@
     "bundle.js.map",
     "*.min.js",
     "*.ipynb",
+    "*.indd",
     "*.log",
+    "*.graffle",
+    "*.pdf",
     "_site/"
   ],
   "bold_folder_labels": true,
@@ -229,6 +232,7 @@
     ".nrepl-port",
     "figwheel_server.log",
     "pom.xml",
+    "pom.xml.asc",
     "*.aux",
     "*.bbl",
     "*.bcf",
