@@ -76,5 +76,25 @@
       "characters": "/"
     },
     "comment": "this is beyond stupid, due to the non-disable-able (wow!) auto-tag-close command in the built-in commands"
+  },
+  {
+    "keys": [
+      "super+ctrl+["
+    ],
+    "command": "move_tab",
+    "args": {
+      "position": "-1"
+    },
+    "comment": "requires https://github.com/SublimeText/MoveTab"
+  },
+  {
+    "keys": [
+      "super+ctrl+]"
+    ],
+    "command": "move_tab",
+    "args": {
+      "position": "+1"
+    },
+    "comment": "requires https://github.com/SublimeText/MoveTab"
   }
 ]
