@@ -4,5 +4,8 @@
     "clj",
     "cljs",
     "cljc"
-  ]
+  ],
+  "detect_indentation": false,
+  "tab_size": 2,
+  "translate_tabs_to_spaces": true
 }
