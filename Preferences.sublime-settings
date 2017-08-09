@@ -303,6 +303,7 @@
   "folder_exclude_patterns": [
     ".git",
     ".idea",
+    ".terraform",
     "*.egg-info",
     "coverage",
     "node_modules",
