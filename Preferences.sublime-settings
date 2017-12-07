@@ -298,11 +298,12 @@
   "binary_file_patterns": [
     "bundle.js",
     "bundle.js.map",
-    "*.min.js",
-    "*.ipynb",
-    "*.indd",
-    "*.log",
     "*.graffle",
+    "*.indd",
+    "*.ipynb",
+    "*.jar",
+    "*.log",
+    "*.min.js",
     "*.pdf",
     "_site/"
   ],
