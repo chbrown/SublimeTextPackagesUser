@@ -18,9 +18,19 @@
         "excludes": []
       },
       "pyflakes": {
-        "@disable": false,
+        "@disable": true,
         "args": [],
         "excludes": []
+      },
+      "pylint": {
+        "@disable": false,
+        "args": [],
+        "disable": "",
+        "enable": "",
+        "excludes": [],
+        "paths": [],
+        "rcfile": "",
+        "show-codes": false
       },
       "rubocop": {
         "@disable": false,

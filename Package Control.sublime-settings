@@ -15,7 +15,7 @@
     "SideBarEnhancements",
     "SublimeLinter",
     "SublimeLinter-contrib-eslint",
-    "SublimeLinter-pyflakes",
+    "SublimeLinter-pylint",
     "SublimeLinter-rubocop",
     "Terraform",
     "Theme - Soda",
