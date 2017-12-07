@@ -338,10 +338,12 @@
     "*.toc"
   ],
   "folder_exclude_patterns": [
+    "*.egg-info",
     ".git",
     ".idea",
+    ".ipynb_checkpoints",
     ".terraform",
-    "*.egg-info",
+    "__pycache__",
     "coverage",
     "node_modules",
     "public/build",
