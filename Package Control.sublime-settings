@@ -14,7 +14,7 @@
     "Sass",
     "SideBarEnhancements",
     "SublimeLinter",
-    "SublimeLinter-contrib-eslint",
+    "SublimeLinter-eslint",
     "SublimeLinter-pylint",
     "SublimeLinter-rubocop",
     "Terraform",
