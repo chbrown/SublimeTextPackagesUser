@@ -103,5 +103,11 @@
       "super+shift+t"
     ],
     "command": "title_case"
+  },
+  {
+    "keys": [
+      "command+ctrl+w"
+    ],
+    "command": "trim_trailing_white_space"
   }
 ]
