@@ -96,5 +96,12 @@
       "position": "+1"
     },
     "comment": "requires https://github.com/SublimeText/MoveTab"
+  },
+  {
+    "keys": [
+      "super+k",
+      "super+shift+t"
+    ],
+    "command": "title_case"
   }
 ]
