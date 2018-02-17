@@ -9,14 +9,15 @@ git clone git@github.com:chbrown/SublimeTextPackagesUser.git User
 
 ## Changes
 
-Some of Sublime Text's plugins (or Sublime Text itself) will make changes to the `.sublime-settings` files, ending up with a variety of JSON formatting flavors. Run `make` in this directory to standardize indentation.
+Some of Sublime Text's plugins (or Sublime Text itself) will make changes to the `.sublime-settings` files,
+ending up with a variety of JSON formatting flavors.
 
-This simply runs `jq -i . <file>` on each file matching the glob `*.sublime-*`.
+Run `./make.sh` to standardize indentation.
 
-It depends on [`jq`](http://stedolan.github.io/jq/) for JSON formatting, and uses the default output spacing.
-
-If any of your `*.sublime-*` files are not valid JSON, `jq` will print out an error and exit without changing the file.
-(It _will_ leave a temporary file with the same prefix as the file you were converting, which is kind of annoying.)
+* `make.sh` calls <code>jq . <i>file</i> | sponge <i>file</i></code> for each file matching the glob `*.sublime-*`.
+* It depends on [`jq`](http://stedolan.github.io/jq/) for JSON formatting, and uses the default output spacing.
+* If any of your `*.sublime-*` files are not valid JSON, `jq` will display a parse error,
+  and the script will not rewrite that file.
 
 
 ### Package control installation
