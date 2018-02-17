@@ -19,6 +19,7 @@
     "SublimeLinter-rubocop",
     "Terraform",
     "Theme - Soda",
-    "TOML"
+    "TOML",
+    "TypeScript"
   ]
 }
