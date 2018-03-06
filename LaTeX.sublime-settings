@@ -1,8 +1,10 @@
 {
   "extensions": [
-    "tex",
+    "bbx",
+    "cbx",
+    "cls",
     "sty",
-    "cls"
+    "tex"
   ],
   "spell_check": true
 }
