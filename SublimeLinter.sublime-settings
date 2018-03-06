@@ -1,86 +1,37 @@
 {
-  "user": {
-    "debug": true,
-    "delay": 0.25,
-    "error_color": "D02000",
-    "gutter_theme": "Packages/SublimeLinter/gutter-themes/Default/Default.gutter-theme",
-    "gutter_theme_excludes": [],
-    "lint_mode": "background",
-    "linters": {
-      "eslint": {
-        "@disable": false,
-        "args": [],
-        "excludes": []
-      },
-      "jshint": {
-        "@disable": false,
-        "args": [],
-        "excludes": []
-      },
-      "pyflakes": {
-        "@disable": true,
-        "args": [],
-        "excludes": []
-      },
-      "pylint": {
-        "@disable": false,
-        "args": [],
-        "disable": "",
-        "enable": "",
-        "excludes": [],
-        "paths": [],
-        "rcfile": "",
-        "show-codes": false
-      },
-      "rubocop": {
-        "@disable": false,
-        "args": [],
-        "excludes": []
-      },
-      "ruby": {
-        "@disable": false,
-        "args": [],
-        "excludes": []
-      },
-      "xmllint": {
-        "@disable": false,
-        "args": [],
-        "excludes": []
-      }
+  "linters": {
+    "eslint": {
+      "disable": false,
+      "args": [],
+      "excludes": []
     },
-    "mark_style": "outline",
-    "no_column_highlights_line": false,
-    "passive_warnings": false,
-    "paths": {
-      "linux": [],
-      "osx": [
-        "/usr/local/bin",
-        "/usr/local/sbin",
-        "/Users/chbrown/.gem/ruby/2.0.0/bin"
-      ],
-      "windows": []
+    "pylint": {
+      "disable": "",
+      "args": [],
+      "enable": "",
+      "excludes": [],
+      "paths": [],
+      "rcfile": "",
+      "show-codes": false
     },
-    "python_paths": {
-      "linux": [],
-      "osx": [],
-      "windows": []
+    "rubocop": {
+      "disable": false,
+      "args": [],
+      "excludes": []
     },
-    "rc_search_limit": 3,
-    "shell_timeout": 10,
-    "show_errors_on_save": false,
-    "show_marks_in_minimap": true,
-    "syntax_map": {
-      "html (django)": "html",
-      "html (rails)": "html",
-      "html 5": "html",
-      "php": "html",
-      "python django": "python"
-    },
-    "tooltip_fontsize": "1rem",
-    "tooltip_theme": "Packages/SublimeLinter/tooltip-themes/Default/Default.tooltip-theme",
-    "tooltip_theme_excludes": [],
-    "tooltips": false,
-    "warning_color": "DDB700",
-    "wrap_find": true
+    "xmllint": {
+      "disable": false,
+      "args": [],
+      "excludes": []
+    }
+  },
+  "paths": {
+    "linux": [],
+    "osx": [
+      "/usr/local/bin",
+      "/usr/local/sbin",
+      "/Users/chbrown/.gem/ruby/2.0.0/bin"
+    ],
+    "windows": []
   }
 }
