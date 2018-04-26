@@ -3,7 +3,8 @@
   "extensions": [
     "clj",
     "cljs",
-    "cljc"
+    "cljc",
+    "edn"
   ],
   "detect_indentation": false,
   "indent_to_bracket": false,
