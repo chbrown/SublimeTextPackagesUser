@@ -15,6 +15,7 @@
     "SideBarEnhancements",
     "SublimeLinter",
     "SublimeLinter-eslint",
+    "SublimeLinter-golint",
     "SublimeLinter-pylint",
     "SublimeLinter-rubocop",
     "Terraform",
