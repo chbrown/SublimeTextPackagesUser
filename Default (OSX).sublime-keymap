@@ -16,7 +16,7 @@
   },
   {
     "keys": [
-      "command+ctrl+l"
+      "super+ctrl+l"
     ],
     "command": "toggle_setting",
     "args": {
@@ -34,7 +34,7 @@
   },
   {
     "keys": [
-      "command+ctrl+t"
+      "super+ctrl+t"
     ],
     "command": "expand_tabs",
     "args": {
@@ -106,7 +106,7 @@
   },
   {
     "keys": [
-      "command+ctrl+w"
+      "super+ctrl+w"
     ],
     "command": "trim_trailing_white_space"
   }
