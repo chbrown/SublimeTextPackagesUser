@@ -109,5 +109,11 @@
       "super+ctrl+w"
     ],
     "command": "trim_trailing_white_space"
+  },
+  {
+    "keys": [
+      "super+ctrl+r"
+    ],
+    "command": "toggle_bookmark"
   }
 ]
