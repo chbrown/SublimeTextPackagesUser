@@ -401,6 +401,7 @@
   "folder_exclude_patterns": [
     "*.egg-info",
     "._nyc_output",
+    ".cpcache",
     ".git",
     ".idea",
     ".ipynb_checkpoints",
