@@ -382,6 +382,7 @@
     ".lein-failures",
     ".nrepl-port",
     "figwheel_server.log",
+    "package-lock.json",
     "pom.xml",
     "pom.xml.asc",
     "*.aux",
