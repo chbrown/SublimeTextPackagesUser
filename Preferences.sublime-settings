@@ -400,6 +400,7 @@
   ],
   "folder_exclude_patterns": [
     "*.egg-info",
+    "._nyc_output",
     ".git",
     ".idea",
     ".ipynb_checkpoints",
