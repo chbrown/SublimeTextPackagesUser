@@ -396,7 +396,8 @@
     "*.out",
     "*.pyc",
     "*.run.xml",
-    "*.toc"
+    "*.toc",
+    "*.xdv"
   ],
   "folder_exclude_patterns": [
     "*.egg-info",
