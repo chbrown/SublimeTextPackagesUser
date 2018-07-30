@@ -1,9 +1,4 @@
-oscrypto-ca-bundle.crt
+*ca-bundle*
 Package Control.last-run
-Package Control.ca-list
-Package Control.ca-bundle
-Package Control.merged-ca-bundle
-Package Control.user-ca-bundle
 Package Control.cache/
-Package Control.ca-certs/
 SublimeLinter/
