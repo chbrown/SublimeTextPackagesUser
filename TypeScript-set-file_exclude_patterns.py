@@ -25,7 +25,7 @@ def log(message):
     print('[set_file_exclude_patterns]', message)
 
 
-def read_gitignore_exclude_patterns(path):
+def read_gitignore_patterns(path):
     gitignore_path = os.path.join(path, '.gitignore')
     try:
         log('reading {}'.format(gitignore_path))
@@ -67,7 +67,7 @@ def update_folder(folder):
          'file_exclude_patterns': ['*.tmp']}
     '''
     path = folder['path']
-    new_file_exclude_patterns = set(read_gitignore_exclude_patterns(path)) | set(read_tsconfig_exclude_patterns(path))
+    new_file_exclude_patterns = set(read_gitignore_patterns(path)) | set(read_tsconfig_exclude_patterns(path))
     original_file_exclude_patterns = folder.get('file_exclude_patterns', [])
     added_file_exclude_patterns = set(new_file_exclude_patterns) - set(original_file_exclude_patterns)
     log('adding new exclude patterns: {}'.format(', '.join(added_file_exclude_patterns)))
