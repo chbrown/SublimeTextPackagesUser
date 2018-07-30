@@ -115,5 +115,11 @@
       "super+ctrl+r"
     ],
     "command": "toggle_bookmark"
+  },
+  {
+    "keys": [
+      "ctrl+shift+r"
+    ],
+    "command": "prev_bookmark"
   }
 ]
