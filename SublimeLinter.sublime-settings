@@ -6,12 +6,10 @@
       "excludes": []
     },
     "pylint": {
-      "disable": "",
+      "disable": false,
       "args": [],
-      "enable": "",
       "excludes": [],
       "paths": [],
-      "rcfile": "",
       "show-codes": false
     },
     "rubocop": {
