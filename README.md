@@ -1,9 +1,9 @@
 ## Installation
 
 ```bash
-cd "~/Library/Application Support/Sublime Text 3/Packages"
+cd "$HOME/Library/Application Support/Sublime Text 3/Packages"
 rm -rf User/
-git clone git@github.com:chbrown/SublimeTextPackagesUser.git User
+git clone https://github.com/chbrown/SublimeTextPackagesUser.git User
 ```
 
 
