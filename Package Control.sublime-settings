@@ -18,6 +18,7 @@
     "SublimeLinter-pylint",
     "SublimeLinter-rubocop",
     "SublimeLinter-shellcheck",
+    "SublimeLinter-tslint",
     "TOML",
     "Terraform",
     "Theme - Soda",

@@ -17,6 +17,16 @@
       "disable": false,
       "excludes": []
     },
+    "tslint": {
+      "args": [
+        "--project",
+        "${folder}",
+        "--config",
+        "~/tslint.yaml"
+      ],
+      "disable": false,
+      "excludes": []
+    },
     "xmllint": {
       "args": [],
       "disable": false,
