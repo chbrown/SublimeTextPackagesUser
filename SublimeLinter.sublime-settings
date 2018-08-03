@@ -28,8 +28,8 @@
     "osx": [
       "/usr/local/bin",
       "/usr/local/sbin",
-      "/Users/chbrown/go/bin",
-      "/Users/chbrown/.gem/ruby/2.0.0/bin"
+      "~/go/bin",
+      "~/.gem/ruby/2.0.0/bin"
     ],
     "windows": []
   }
