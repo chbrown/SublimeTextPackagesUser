@@ -429,6 +429,8 @@
     "*.log",
     "*.min.js",
     "*.pdf",
+    "Cartfile.resolved",
+    "Gemfile.lock",
     "_site/",
     "bundle.js",
     "bundle.js.map"
