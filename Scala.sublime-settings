@@ -1,7 +1,7 @@
 {
+  "detect_indentation": false,
   "extensions": [
     "sbt"
   ],
-  "detect_indentation": false,
   "tab_size": 2
 }

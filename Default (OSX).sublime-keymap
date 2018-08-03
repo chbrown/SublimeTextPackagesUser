@@ -1,125 +1,125 @@
 [
   {
+    "command": "toggle_side_bar",
     "keys": [
       "ctrl+s"
-    ],
-    "command": "toggle_side_bar"
+    ]
   },
   {
-    "keys": [
-      "ctrl+1"
-    ],
-    "command": "toggle_setting",
     "args": {
       "setting": "gutter"
-    }
+    },
+    "command": "toggle_setting",
+    "keys": [
+      "ctrl+1"
+    ]
   },
   {
-    "keys": [
-      "super+ctrl+l"
-    ],
-    "command": "toggle_setting",
     "args": {
       "setting": "line_numbers"
-    }
+    },
+    "command": "toggle_setting",
+    "keys": [
+      "super+ctrl+l"
+    ]
   },
   {
-    "keys": [
-      "ctrl+w"
-    ],
-    "command": "toggle_setting",
     "args": {
       "setting": "word_wrap"
-    }
+    },
+    "command": "toggle_setting",
+    "keys": [
+      "ctrl+w"
+    ]
   },
   {
-    "keys": [
-      "super+ctrl+t"
-    ],
-    "command": "expand_tabs",
     "args": {
       "set_translate_tabs": true
-    }
+    },
+    "command": "expand_tabs",
+    "keys": [
+      "super+ctrl+t"
+    ]
   },
   {
-    "keys": [
-      "shift+enter"
-    ],
     "command": "write_selection_to_iterm",
     "context": [
       {
         "key": "selector",
-        "operator": "equal",
-        "operand": "source.js"
+        "operand": "source.js",
+        "operator": "equal"
       }
+    ],
+    "keys": [
+      "shift+enter"
     ]
   },
   {
-    "keys": [
-      "shift+enter"
-    ],
     "command": "write_selection_to_iterm",
     "context": [
       {
         "key": "selector",
-        "operator": "equal",
-        "operand": "source.python"
+        "operand": "source.python",
+        "operator": "equal"
       }
+    ],
+    "keys": [
+      "shift+enter"
     ]
   },
   {
-    "keys": [
-      "/"
-    ],
-    "command": "insert",
     "args": {
       "characters": "/"
     },
-    "comment": "this is beyond stupid, due to the non-disable-able (wow!) auto-tag-close command in the built-in commands"
+    "command": "insert",
+    "comment": "this is beyond stupid, due to the non-disable-able (wow!) auto-tag-close command in the built-in commands",
+    "keys": [
+      "/"
+    ]
   },
   {
-    "keys": [
-      "super+ctrl+["
-    ],
-    "command": "move_tab",
     "args": {
       "position": "-1"
     },
-    "comment": "requires https://github.com/SublimeText/MoveTab"
+    "command": "move_tab",
+    "comment": "requires https://github.com/SublimeText/MoveTab",
+    "keys": [
+      "super+ctrl+["
+    ]
   },
   {
-    "keys": [
-      "super+ctrl+]"
-    ],
-    "command": "move_tab",
     "args": {
       "position": "+1"
     },
-    "comment": "requires https://github.com/SublimeText/MoveTab"
+    "command": "move_tab",
+    "comment": "requires https://github.com/SublimeText/MoveTab",
+    "keys": [
+      "super+ctrl+]"
+    ]
   },
   {
+    "command": "title_case",
     "keys": [
       "super+k",
       "super+shift+t"
-    ],
-    "command": "title_case"
+    ]
   },
   {
+    "command": "trim_trailing_white_space",
     "keys": [
       "super+ctrl+w"
-    ],
-    "command": "trim_trailing_white_space"
+    ]
   },
   {
+    "command": "toggle_bookmark",
     "keys": [
       "super+ctrl+r"
-    ],
-    "command": "toggle_bookmark"
+    ]
   },
   {
+    "command": "prev_bookmark",
     "keys": [
       "ctrl+shift+r"
-    ],
-    "command": "prev_bookmark"
+    ]
   }
 ]

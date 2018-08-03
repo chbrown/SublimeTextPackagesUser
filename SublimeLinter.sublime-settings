@@ -1,25 +1,25 @@
 {
   "linters": {
     "eslint": {
-      "disable": false,
       "args": [],
+      "disable": false,
       "excludes": []
     },
     "pylint": {
-      "disable": false,
       "args": [],
+      "disable": false,
       "excludes": [],
       "paths": [],
       "show-codes": false
     },
     "rubocop": {
-      "disable": false,
       "args": [],
+      "disable": false,
       "excludes": []
     },
     "xmllint": {
-      "disable": false,
       "args": [],
+      "disable": false,
       "excludes": []
     }
   },

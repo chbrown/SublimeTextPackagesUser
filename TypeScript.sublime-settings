@@ -1,7 +1,7 @@
 {
-  "typescript_auto_format": false,
-  "tab_size": 2,
   "rulers": [
     80
-  ]
+  ],
+  "tab_size": 2,
+  "typescript_auto_format": false
 }

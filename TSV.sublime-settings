@@ -1,13 +1,13 @@
 {
+  "detect_indentation": false,
+  "draw_white_space": "all",
+  "ensure_newline_at_eof_on_save": false,
   "extensions": [
     "tsv"
   ],
+  "tab_completion": false,
   "tab_size": 10,
   "translate_tabs_to_spaces": false,
   "trim_automatic_white_space": false,
-  "trim_trailing_white_space_on_save": false,
-  "ensure_newline_at_eof_on_save": false,
-  "draw_white_space": "all",
-  "detect_indentation": false,
-  "tab_completion": false
+  "trim_trailing_white_space_on_save": false
 }
