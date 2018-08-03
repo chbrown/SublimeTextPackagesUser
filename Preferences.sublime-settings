@@ -356,8 +356,6 @@
   "auto_indent": true,
   "auto_match_enabled": false,
   "binary_file_patterns": [
-    "bundle.js",
-    "bundle.js.map",
     "*.graffle",
     "*.indd",
     "*.ipynb",
@@ -365,7 +363,9 @@
     "*.log",
     "*.min.js",
     "*.pdf",
-    "_site/"
+    "_site/",
+    "bundle.js",
+    "bundle.js.map"
   ],
   "bold_folder_labels": true,
   "caret_style": "phase",
@@ -376,15 +376,6 @@
   "draw_white_space": "selection",
   "ensure_newline_at_eof_on_save": true,
   "file_exclude_patterns": [
-    ".DS_Store",
-    ".jekyll-metadata",
-    ".lein-repl-history",
-    ".lein-failures",
-    ".nrepl-port",
-    "figwheel_server.log",
-    "package-lock.json",
-    "pom.xml",
-    "pom.xml.asc",
     "*.aux",
     "*.bbl",
     "*.bcf",
@@ -397,7 +388,16 @@
     "*.pyc",
     "*.run.xml",
     "*.toc",
-    "*.xdv"
+    "*.xdv",
+    ".DS_Store",
+    ".jekyll-metadata",
+    ".lein-failures",
+    ".lein-repl-history",
+    ".nrepl-port",
+    "figwheel_server.log",
+    "package-lock.json",
+    "pom.xml",
+    "pom.xml.asc"
   ],
   "folder_exclude_patterns": [
     "*.egg-info",
@@ -408,7 +408,9 @@
     ".ipynb_checkpoints",
     ".terraform",
     "__pycache__",
+    "cljs/out",
     "coverage",
+    "js/compiled",
     "node_modules",
     "public/build",
     "target/*/classes",
@@ -420,8 +422,6 @@
     "target/resolution-cache",
     "target/stale",
     "target/streams",
-    "js/compiled",
-    "cljs/out",
     "vendor/bundle",
     "vendor/cache"
   ],
