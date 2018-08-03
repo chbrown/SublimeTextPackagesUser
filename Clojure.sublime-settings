@@ -2,8 +2,8 @@
   "detect_indentation": false,
   "extensions": [
     "clj",
-    "cljs",
     "cljc",
+    "cljs",
     "edn"
   ],
   "indent_to_bracket": false,

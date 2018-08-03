@@ -1,8 +1,41 @@
 [
   {
-    "command": "toggle_side_bar",
+    "args": {
+      "characters": "/"
+    },
+    "command": "insert",
+    "comment": "this is beyond stupid, due to the non-disable-able (wow!) auto-tag-close command in the built-in commands",
     "keys": [
-      "ctrl+s"
+      "/"
+    ]
+  },
+  {
+    "args": {
+      "position": "+1"
+    },
+    "command": "move_tab",
+    "comment": "requires https://github.com/SublimeText/MoveTab",
+    "keys": [
+      "super+ctrl+]"
+    ]
+  },
+  {
+    "args": {
+      "position": "-1"
+    },
+    "command": "move_tab",
+    "comment": "requires https://github.com/SublimeText/MoveTab",
+    "keys": [
+      "super+ctrl+["
+    ]
+  },
+  {
+    "args": {
+      "set_translate_tabs": true
+    },
+    "command": "expand_tabs",
+    "keys": [
+      "super+ctrl+t"
     ]
   },
   {
@@ -33,15 +66,6 @@
     ]
   },
   {
-    "args": {
-      "set_translate_tabs": true
-    },
-    "command": "expand_tabs",
-    "keys": [
-      "super+ctrl+t"
-    ]
-  },
-  {
     "command": "write_selection_to_iterm",
     "context": [
       {
@@ -68,33 +92,9 @@
     ]
   },
   {
-    "args": {
-      "characters": "/"
-    },
-    "command": "insert",
-    "comment": "this is beyond stupid, due to the non-disable-able (wow!) auto-tag-close command in the built-in commands",
+    "command": "prev_bookmark",
     "keys": [
-      "/"
-    ]
-  },
-  {
-    "args": {
-      "position": "-1"
-    },
-    "command": "move_tab",
-    "comment": "requires https://github.com/SublimeText/MoveTab",
-    "keys": [
-      "super+ctrl+["
-    ]
-  },
-  {
-    "args": {
-      "position": "+1"
-    },
-    "command": "move_tab",
-    "comment": "requires https://github.com/SublimeText/MoveTab",
-    "keys": [
-      "super+ctrl+]"
+      "ctrl+shift+r"
     ]
   },
   {
@@ -105,21 +105,21 @@
     ]
   },
   {
-    "command": "trim_trailing_white_space",
-    "keys": [
-      "super+ctrl+w"
-    ]
-  },
-  {
     "command": "toggle_bookmark",
     "keys": [
       "super+ctrl+r"
     ]
   },
   {
-    "command": "prev_bookmark",
+    "command": "toggle_side_bar",
     "keys": [
-      "ctrl+shift+r"
+      "ctrl+s"
+    ]
+  },
+  {
+    "command": "trim_trailing_white_space",
+    "keys": [
+      "super+ctrl+w"
     ]
   }
 ]
