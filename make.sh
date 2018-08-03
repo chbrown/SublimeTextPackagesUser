@@ -5,7 +5,7 @@ for JSON_PATH in *.sublime-*; do
   # Do trial run first and fail immediately,
   # to avoid truncating the file if it can't be parsed
   if jq . "$JSON_PATH" >/dev/null; then
-    jq . "$JSON_PATH" | sponge "$JSON_PATH"
+    jq --sort-keys . "$JSON_PATH" | sponge "$JSON_PATH"
   fi
 done
 
