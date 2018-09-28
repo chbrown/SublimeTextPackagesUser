@@ -59,4 +59,7 @@ class SetFileExcludePatternsCommand(sublime_plugin.WindowCommand):
     '''
     def run(self):
         window = self.window
+        view = window.active_view()
+        view.set_status(__name__, 'running tsc...')
         update_window_project_data(window, update_project_data)
+        view.erase_status(__name__)
