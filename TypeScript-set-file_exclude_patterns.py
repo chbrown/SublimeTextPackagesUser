@@ -1,6 +1,5 @@
 import os
-import re
-import json
+import subprocess
 import sublime
 import sublime_plugin
 
@@ -23,39 +22,16 @@ def log(*messages):
     print('[set_file_exclude_patterns]', *messages)
 
 
-def read_gitignore_patterns(path):
-    gitignore_path = os.path.join(path, '.gitignore')
-    log('reading {}'.format(gitignore_path))
-    try:
-        with open(gitignore_path) as fp:
-            log('reading .gitignore patterns')
-            for line in fp:
-                gitignore_line = line.strip()
-                if not gitignore_line.startswith('#'):
-                    yield gitignore_line
-    except FileNotFoundError:
-        pass
-
-
-def read_tsconfig_exclude_patterns(path):
-    '''
-    Open the tsconfig file and read its `files` and `exclude` fields.
-    '''
-    tsconfig_path = os.path.join(path, 'tsconfig.json')
-    try:
-        log('reading {}'.format(tsconfig_path))
-        with open(tsconfig_path) as fp:
-            tsconfig = json.load(fp)
-            log('excluding derivatives of .files')
-            for source in tsconfig.get('files', []):
-                basename = re.sub(r'\.tsx?$', '', source)
-                for extension in ['.js', '.d.ts']:
-                    yield basename + extension
-            log('excluding .exclude patterns')
-            for pattern in tsconfig.get('exclude', []):
-                yield pattern
-    except FileNotFoundError:
-        pass
+def read_tsc_emitted_files(folder_path):
+    args = ['npx', 'tsc', '--listEmittedFiles']
+    log('running subprocess:', ' '.join(args))
+    lines = subprocess.check_output(args, cwd=folder_path, universal_newlines=True)
+    for line in lines.split('\n'):
+        if line.startswith('TSFILE: '):
+            # strip first 8 characters ('TSFILE: ')
+            filepath = line[8:]
+            # relativize filepath to given folder path
+            yield os.path.relpath(filepath, folder_path)
 
 
 def update_folder(folder):
@@ -64,19 +40,15 @@ def update_folder(folder):
         {'path': '/Users/chbrown/github/urlio',
          'file_exclude_patterns': ['*.tmp']}
     '''
-    path = folder['path']
-    new_file_exclude_patterns = set(read_gitignore_patterns(path)) | set(read_tsconfig_exclude_patterns(path))
-    original_file_exclude_patterns = folder.get('file_exclude_patterns', [])
-    added_file_exclude_patterns = set(new_file_exclude_patterns) - set(original_file_exclude_patterns)
-    log('adding new exclude patterns: {}'.format(', '.join(added_file_exclude_patterns)))
-    updated_file_exclude_patterns = original_file_exclude_patterns + list(added_file_exclude_patterns)
-    folder.update(file_exclude_patterns=updated_file_exclude_patterns)
-    return folder
+    file_exclude_patterns = folder.get('file_exclude_patterns', [])
+    for tsc_emitted_file in read_tsc_emitted_files(folder['path']):
+        if tsc_emitted_file not in file_exclude_patterns:
+            file_exclude_patterns.append(tsc_emitted_file)
+    return dict(folder, file_exclude_patterns=file_exclude_patterns)
 
 
 def update_project_data(project_data):
-    project_data.update(folders=list(map(update_folder, project_data.get('folders', []))))
-    return project_data
+    return dict(project_data, folders=list(map(update_folder, project_data.get('folders', []))))
 
 
 class SetFileExcludePatternsCommand(sublime_plugin.WindowCommand):
