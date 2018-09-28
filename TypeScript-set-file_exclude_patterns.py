@@ -86,5 +86,5 @@ class SetFileExcludePatternsCommand(sublime_plugin.WindowCommand):
     Check like: sublime.active_window().project_data()
     '''
     def run(self):
-        window = sublime.active_window()
+        window = self.window
         update_window_project_data(window, update_project_data)
