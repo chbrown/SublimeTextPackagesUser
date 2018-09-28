@@ -8,13 +8,11 @@ import sublime_plugin
 ####################################
 # Generic Sublime Text API Helpers #
 
-def update_window_project_data(f, window=None):
+def update_window_project_data(window, f):
     '''
-    Get the project_data dict from the given window (defaults to the currently active window),
-    run it through f, and set the project_data on that window to the changed dict.
+    Get the project_data dict from the given window, run it through f,
+    and set the project_data on that window to the result.
     '''
-    if window is None:
-        window = sublime.active_window()
     window.set_project_data(f(window.project_data()))
 
 
@@ -88,4 +86,5 @@ class SetFileExcludePatternsCommand(sublime_plugin.WindowCommand):
     Check like: sublime.active_window().project_data()
     '''
     def run(self):
-        update_window_project_data(update_project_data)
+        window = sublime.active_window()
+        update_window_project_data(window, update_project_data)
