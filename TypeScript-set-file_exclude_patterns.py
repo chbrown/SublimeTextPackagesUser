@@ -19,8 +19,8 @@ def update_window_project_data(window, f):
 #############################
 # TypeScript Project Config #
 
-def log(message):
-    print('[set_file_exclude_patterns]', message)
+def log(*messages):
+    print('[set_file_exclude_patterns]', *messages)
 
 
 def read_gitignore_patterns(path):
