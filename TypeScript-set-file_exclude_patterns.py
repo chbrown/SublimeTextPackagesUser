@@ -27,10 +27,10 @@ def log(message):
 
 def read_gitignore_patterns(path):
     gitignore_path = os.path.join(path, '.gitignore')
+    log('reading {}'.format(gitignore_path))
     try:
-        log('reading {}'.format(gitignore_path))
         with open(gitignore_path) as fp:
-            log('excluding .gitignore patterns')
+            log('reading .gitignore patterns')
             for line in fp:
                 gitignore_line = line.strip()
                 if not gitignore_line.startswith('#'):
