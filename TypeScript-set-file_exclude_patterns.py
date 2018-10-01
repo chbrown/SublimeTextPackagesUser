@@ -1,5 +1,5 @@
 import os
-import subprocess
+from subprocess import Popen, PIPE
 import sublime
 import sublime_plugin
 
@@ -24,14 +24,14 @@ def log(*messages):
 
 def read_tsc_emitted_files(folder_path):
     args = ['npx', 'tsc', '--listEmittedFiles']
-    log('running subprocess:', ' '.join(args))
-    lines = subprocess.check_output(args, cwd=folder_path, universal_newlines=True)
-    for line in lines.split('\n'):
-        if line.startswith('TSFILE: '):
-            # strip first 8 characters ('TSFILE: ')
-            filepath = line[8:]
-            # relativize filepath to given folder path
-            yield os.path.relpath(filepath, folder_path)
+    log('opening process:', ' '.join(args))
+    with Popen(args, stdout=PIPE, cwd=folder_path, universal_newlines=True) as proc:
+        for line in proc.stdout:
+            if line.startswith('TSFILE: '):
+                # strip first 8 characters ('TSFILE: ')
+                filepath = line[8:].strip()
+                # relativize filepath to given folder path
+                yield os.path.relpath(filepath, folder_path)
 
 
 def update_folder(folder):
