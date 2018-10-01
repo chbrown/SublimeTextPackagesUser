@@ -12,6 +12,7 @@
     "Sass",
     "SideBarEnhancements",
     "SublimeLinter",
+    "SublimeLinter-clang",
     "SublimeLinter-eslint",
     "SublimeLinter-golint",
     "SublimeLinter-pycodestyle",
