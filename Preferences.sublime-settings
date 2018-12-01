@@ -426,14 +426,14 @@
     "*.indd",
     "*.ipynb",
     "*.jar",
+    "*.js.map",
     "*.log",
     "*.min.js",
     "*.pdf",
     "Cartfile.resolved",
     "Gemfile.lock",
     "_site/",
-    "bundle.js",
-    "bundle.js.map"
+    "bundle.js"
   ],
   "bold_folder_labels": true,
   "caret_style": "phase",
