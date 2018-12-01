@@ -38,7 +38,7 @@
     "osx": [
       "/usr/local/bin",
       "/usr/local/sbin",
-      "~/.gem/ruby/2.0.0/bin",
+      "~/.gem/bin",
       "~/go/bin"
     ],
     "windows": []
