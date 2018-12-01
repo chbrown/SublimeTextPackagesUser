@@ -1,4 +1,5 @@
 {
+  "detect_indentation": false,
   "rulers": [
     80
   ],
