@@ -465,6 +465,7 @@
     ".jekyll-metadata",
     ".lein-failures",
     ".lein-repl-history",
+    ".localized",
     ".nrepl-port",
     ".rebel_readline_history",
     "figwheel_server.log",
