@@ -433,7 +433,9 @@
     "Cartfile.resolved",
     "Gemfile.lock",
     "_site/",
-    "bundle.js"
+    "build/*.js",
+    "bundle.js",
+    "dist/*.js"
   ],
   "bold_folder_labels": true,
   "caret_style": "phase",
