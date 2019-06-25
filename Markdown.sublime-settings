@@ -1,3 +1,5 @@
 {
-  "spell_check": true
+  "detect_indentation": false,
+  "spell_check": true,
+  "tab_size": 2
 }
