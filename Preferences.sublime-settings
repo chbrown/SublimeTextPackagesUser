@@ -489,7 +489,9 @@
   "auto_indent": true,
   "auto_match_enabled": false,
   "binary_file_patterns": [
+    "*.bz2",
     "*.graffle",
+    "*.gz",
     "*.indd",
     "*.ipynb",
     "*.jar",
