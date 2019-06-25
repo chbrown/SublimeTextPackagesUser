@@ -27,8 +27,10 @@
     "Terraform",
     "Theme - Soda",
     "TypeScript",
+    "isort",
     "jsonnet syntax",
     "lispindent",
-    "nginx"
+    "nginx",
+    "sublack"
   ]
 }
