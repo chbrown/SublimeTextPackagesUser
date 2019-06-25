@@ -6,6 +6,8 @@
   "in_process_packages": [],
   "installed_packages": [
     "Babel",
+    "Dockerfile Syntax Highlighting",
+    "HOCON Syntax Highlighting",
     "LESS",
     "MoveTab",
     "Package Control",
@@ -25,6 +27,7 @@
     "Terraform",
     "Theme - Soda",
     "TypeScript",
+    "jsonnet syntax",
     "lispindent",
     "nginx"
   ]
