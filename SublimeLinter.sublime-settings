@@ -17,6 +17,14 @@
       "disable": false,
       "excludes": []
     },
+    "swiftlint": {
+      "args": [
+        "--config",
+        "~/.swiftlint.yml"
+      ],
+      "disable": false,
+      "excludes": []
+    },
     "tslint": {
       "args": [
         "--project",

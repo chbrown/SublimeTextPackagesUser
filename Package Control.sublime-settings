@@ -13,6 +13,7 @@
     "SideBarEnhancements",
     "SublimeLinter",
     "SublimeLinter-clang",
+    "SublimeLinter-contrib-swiftlint",
     "SublimeLinter-eslint",
     "SublimeLinter-golint",
     "SublimeLinter-pycodestyle",
