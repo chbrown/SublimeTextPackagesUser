@@ -587,7 +587,7 @@
   "ignored_words": [
     "→"
   ],
-  "indent_to_bracket": true,
+  "indent_to_bracket": false,
   "scroll_past_end": true,
   "show_definitions": false,
   "show_encoding": true,
