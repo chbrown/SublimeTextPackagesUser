@@ -576,6 +576,9 @@
     "vendor/cache"
   ],
   "font_face": "Fira Code",
+  "font_options": [
+    "gray_antialias"
+  ],
   "font_size": 12,
   "highlight_line": true,
   "highlight_modified_tabs": true,
@@ -593,6 +596,9 @@
   "show_encoding": true,
   "tab_size": 2,
   "theme": "Soda Light 3.sublime-theme",
+  "theme_font_options": [
+    "gray_antialias"
+  ],
   "translate_tabs_to_spaces": true,
   "tree_animation_enabled": false,
   "trim_automatic_white_space": true,
