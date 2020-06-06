@@ -23,13 +23,14 @@ def log(*messages):
 
 
 def read_tsc_emitted_files(folder_path):
+    TSFILE_PREFIX = 'TSFILE: '
     args = ['npx', 'tsc', '--listEmittedFiles']
     log('opening process:', ' '.join(args))
     with Popen(args, stdout=PIPE, cwd=folder_path, universal_newlines=True) as proc:
         for line in proc.stdout:
-            if line.startswith('TSFILE: '):
-                # strip first 8 characters ('TSFILE: ')
-                filepath = line[8:].strip()
+            if line.startswith(TSFILE_PREFIX):
+                # delete 'TSFILE: ' prefix and strip whitespace
+                filepath = line[len(TSFILE_PREFIX):].strip()
                 # relativize filepath to given folder path
                 yield os.path.relpath(filepath, folder_path)
 
